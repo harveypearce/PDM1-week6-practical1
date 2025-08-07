@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM1 - W6P1 - Exercise 1.3</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../lib/libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Exercise 1.3</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>Create a sketch of any size. Display a message on the canvas and animate it 
+                so that a new character of the message appears every half a second. When the full 
+                message is displayed, return to the start. See the video 
+                below for an example.
+            </p>
+            <p>Style the text however you like.</p>
+            <p>There are two ways to animate at a lower speed than the standard frame rate of 60 frame per 
+                second:
+            </p>
+            <ol>
+                <li>Use <code><a href="https://p5js.org/reference/#/p5/frameRate" target="_blank">frameRate()</a></code> to run the sketch at a slower frame rate.</li>
+                <li>Use the <code><a href="https://p5js.org/reference/#/p5/frameCount" target="_blank">frameCount</a></code> system variable to work out when half a second has elapsed. The enterUsername example 
+                from last lecture shows how to do this.</li>
+            </ol>
+            <p>JavaScript provides handy <a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods" target="_blank">string methods</a> that will 
+                be useful for this exercise.</p>
+            <p>Expected output:</p>
+            <p>
+                <video width="400" height="300" controls>
+                    <source src="./assets/exercise1-3.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>You will need two global variables to store strings. One variable (or constant) should store 
+                        the complete message and the other should store the portion of the message to display. Alternatively, 
+                        you can use a number variable to keep count of how many characters to display from the message.
+                    </p>
+                    <p>The <code><a href="https://developer.mozilla.org/en-US/docs/Learn/JavaScript/First_steps/Useful_string_methods#extracting_a_substring_from_a_string" target="_blank">string.slice()</a></code> method is useful for this exercise.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

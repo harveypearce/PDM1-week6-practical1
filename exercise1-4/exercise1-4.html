@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM1 - W6P1 - Exercise 1.4</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../lib/libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Exercise 1.4</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>This is a spicy exercise!</p>
+            <p><code>sketch.js</code> contains code to draw a "soft keyboard", a keyboard 
+            that appears on screen, much like the keyboard displayed on mobile devices. Your 
+            task is to make it possible to type using the soft keyboard. Take 
+            a moment to read the code and make sure you understand how it works.</p>
+            <p>You will need to implement the <code>mouseClicked()</code> event function. Inside 
+            the function, use the information in the <code>keys</code> array to figure out which character, 
+            if any, the user has typed. Display the typed screen on the canvas as the user types.</p>
+            <p>Expected output:</p>
+            <p>
+                <video width="600" height="600" controls>
+                    <source src="./assets/exercise1-4.mov" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>To figure out which key has been typed, use a standard for or a for... of loop to 
+                        iterate through the <code>keys</code> array and check if the mouse coordinates are 
+                        over a key object. Take note that all keys are the same size, except the space bar, 
+                        which is wider than the others.
+                    </p>
+                    <p>To display the characters the user types, you will need a global variable. Each time a 
+                        key is typed, concatenate the new key name with the message typed so far. Remember that 
+                        strings are immutable so you can't directly add a new character to a string variable. You 
+                        can, however, overwrite a string variable e.g.
+                    </p>
+                    <pre>let message = "";
+message = message + newCharacter;
+                    </pre>
+                    <p>Display the global string variable somewhere above the keyboard.
+                    </p>
+                    <p>Useful links in the documentation:</p>
+                    <ul>
+                        <li><a href="https://p5js.org/reference/#/p5/text" target="_blank">text()</a></li>
+                        <li><a href="https://p5js.org/reference/#/p5/textAlign" target="_blank">textAlign()</a></li>
+                        <li><a href="https://p5js.org/reference/#/p5/textSize" target="_blank">textSize()</a></li>
+                        <li><a href="https://p5js.org/reference/#/p5/textWrap" target="_blank">textWrap()</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>

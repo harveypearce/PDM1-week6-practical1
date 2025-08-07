@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>PDM1 - W6P1 - Exercise 1.1</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="../lib/main-styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="../lib/libraries/p5.min.js"></script>
+  </head>
+
+  <body>
+    <h1>Exercise 1.1</h1>
+    <p>Your sketch:</p>
+    <div class="guidance">
+        <h2>Instructions</h2>
+        <div>
+            <p>Create a sketch with a 600px by 600px canvas and save the following text as a constant:<br>Lorem ipsum dolor sit amet</p>
+            <p>(If you're wondering what that text is about, it's the first phrase of "lorem ipsum", placeholder text that is widely used by 
+                designers to plan text layouts. See more here: <a href="https://loremipsum.io" target="_blank">https://loremipsum.io/</a>)
+            </p>
+            <p>Display the text so that it is right aligned an located in the bottom right corner of the canvas, as shown in the image below. Choose 
+                your own colours. You can also choose to load a different font. You may find that the text wrapping looks a bit 
+                different depending on your chosen font. The displayed text should:
+            </p>
+            <ul>
+                <li>take up as much of the bottom right quadrant of the canvas as possible without 
+                    words disappearing off the bottom of the screen;
+                </li>
+                <li>have a margin of about 20 pixels on the right and bottom edges of the text.</li>
+            </ul>
+            <p>Optional extra--make the text change colour when the mouse is in the bottom right quadrant 
+                of the canvas.
+            </p>
+            <p>Expected output:</p>
+            <p>
+                <img src="./assets/exercise1-1.png" width="600px" height="600px" alt="Placeholder text is aligned in the bottom right corner of the canvas.">
+            </p>
+        </div>
+        <div>
+            <button class="btn btn-primary hint" type="button" data-bs-toggle="collapse" data-bs-target="#hint" aria-expanded="false" aria-controls="hint">
+                Hint
+            </button>
+            <div class="collapse" id="hint">
+                <div class="card card-body">
+                    <p>You will need to make use of the text display functions <code>textAlign()</code> and <code>textSize()</code>. You will also need 
+                    to set the width and height of the text box in the <code>text()</code> function.</p>
+                    <p>If you have used all of the above functions and the text still isn't right, check that 
+                        <code>rectMode()</code> is in the default <code>CORNER</code> mode (i.e. not called).
+                    </p>
+                    <p>Useful links in the documentation:</p>
+                    <ul>
+                        <li><a href="https://p5js.org/reference/#/p5/text" target="_blank">text()</a></li>
+                        <li><a href="https://p5js.org/reference/#/p5/textAlign" target="_blank">textAlign()</a></li>
+                        <li><a href="https://p5js.org/reference/#/p5/textSize" target="_blank">textSize()</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="sketch.js"></script>
+  </body>
+</html>
